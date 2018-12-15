@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Shadows+Into+Light|Allura" rel="stylesheet">
+</head>
+<body>
+
+<!-- <audio id="mozart_sample0" src="audio_mozart\\sample0.mp3"></audio>
+<audio id="mozart_sample100" src="audio_mozart\\sample100.mp3"></audio>
+<audio id="mozart_sample500" src="audio_mozart\\sample500.mp3"></audio>
+<audio id="mozart_sample1000" src="audio_mozart\\sample1000.mp3"></audio>
+<audio id="mozart_sample2000" src="audio_mozart\\sample2000.mp3"></audio>
+<audio id="mozart_sample3000" src="audio_mozart\\sample3000.mp3"></audio>
+<audio id="mozart_sample4000" src="audio_mozart\\sample4000.mp3"></audio>
+<audio id="mozart_sample5000" src="audio_mozart\\sample5000.mp3"></audio>
+<audio id="mozart_sample5500" src="audio_mozart\\sample5500.mp3"></audio>
+<audio id="mozart_sample7000" src="audio_mozart\\sample7000.mp3"></audio> -->
+<audio id="mozart_sample7500" src="https://docs.google.com/uc?export=download&id=1IHOit6f-AkVLutZxX015zibUUacUEjR1"></audio>
+<audio id="mozart_17" src="https://docs.google.com/uc?export=download&id=1eMcT8kCBUrrD8RR4dMSbmFK3eaSbi-dv"></audio>
+<audio id="mozart_2" src="https://docs.google.com/uc?export=download&id=1SMPkH8Ayt_US9VWPQ74VxhK3TmghKFk7"></audio>
+<audio id="watson_sample7000" src="https://docs.google.com/uc?export=download&id=1-L8fUper5qha1U4z6jV4ML0SLSEO_1Ar"></audio>
+
+
+
+
+
+<!-- <audio id="mozart_sonatas_sample0" src="audio_mozart_sonatas\\sample0.mp3"></audio>
+<audio id="mozart_sonatas_sample100" src="audio_mozart_sonatas\\sample100.mp3"></audio>
+<audio id="mozart_sonatas_sample500" src="audio_mozart_sonatas\\sample500.mp3"></audio>
+<audio id="mozart_sonatas_sample700" src="audio_mozart_sonatas\\sample700.mp3"></audio>
+<audio id="mozart_sonatas_sample1000" src="audio_mozart_sonatas\\sample1000.mp3"></audio>
+<audio id="mozart_sonatas_sample1500" src="audio_mozart_sonatas\\sample1500.mp3"></audio> -->
+<audio id="mozart_sonatas_sample2500" src="https://docs.google.com/uc?export=download&id=1_yNFD6AdjKPhFuugqfx5V1e0kUIMVzov"></audio>
+<audio id="sonata_311" src="https://docs.google.com/uc?export=download&id=1O1eJHYx-Rljl9XU3PKUrP-pryu--_wGw"></audio>
+<audio id="sonata_248" src="https://docs.google.com/uc?export=download&id=14kKy_K3O-J9h8HE_RRmmSjQUPW7e9FJH"></audio>
+<audio id="watson_sonata_2500" src="https://docs.google.com/uc?export=download&id=1NkRMFYt6dmPQBFxB3tfMORw-Z2NXEWdr"></audio>
+
+
+
+
+
+<!-- <audio id="jazz_sample0" src="audio_jazz\\sample0.mp3"></audio>
+<audio id="jazz_sample100" src="audio_jazz\\sample100.mp3"></audio>
+<audio id="jazz_sample500" src="audio_jazz\\sample500.mp3"></audio>
+<audio id="jazz_sample700" src="audio_jazz\\sample700.mp3"></audio>
+<audio id="jazz_sample1000" src="audio_jazz\\sample1000.mp3"></audio>
+<audio id="jazz_sample1500" src="audio_jazz\\sample1500.mp3"></audio> -->
+<audio id="jazz_sample2500" src="https://docs.google.com/uc?export=download&id=11qBnrwomj6FOdXXONClvoMbsjK5Yl-zc"></audio>
+<audio id="jazz_11" src="https://docs.google.com/uc?export=download&id=1svl5RYc8tnpBCV7jPx_PWZzUVaY7L9rG"></audio>
+<audio id="watson_jazz_2500" src="https://docs.google.com/uc?export=download&id=1IkSDIZyfQq5BOzFsnwYJ7ljLb-JuJ20W"></audio>
+
+
+
+
+
+<div class="top">
+	<h1> Can AI Make Music? </h1>
+	<h4> Hello! Thank you for helping me out :) <br>
+		There are 8 samples that are either composed by AI or humans. <br> Your task is to see if you can figure out the genre and the composer (AI or human). <br> I have provided example audios on the right. Good luck! </h4>
+
+	<div class="subtop">
+		<p> Click on the buttons to play the samples! <br> Press "S" to stop audio </p>
+	</div>
+</div>
+
+<hr>
+
+<!--<div class="bigContainer">
+
+	<div class="container">
+		<h2> Trained on All Mozart Piano Compositions </h2>
+		<p> # of training data: 41 </p>
+
+		<button onclick="PlaySound('mozart_sample0')"> 0 </button>
+		<button onclick="PlaySound('mozart_sample100')"> 100 </button>
+		<button onclick="PlaySound('mozart_sample500')"> 500 </button>
+		<button onclick="PlaySound('mozart_sample1000')"> 1000 </button>
+		<button onclick="PlaySound('mozart_sample2000')"> 2000 </button>
+		<button onclick="PlaySound('mozart_sample3000')"> 3000 </button>
+		<button onclick="PlaySound('mozart_sample4000')"> 4000 </button>
+		<button onclick="PlaySound('mozart_sample5000')"> 5000 </button>
+		<button onclick="PlaySound('mozart_sample5500')"> 5500 </button>
+
+	</div>
+	<div class="container">
+
+		<h2> Trained on Only Mozart Piano Sonatas </h2>
+		<p> # of training data: 20 </p>
+
+		<button onclick="PlaySound('mozart_sonatas_sample0')"> 0 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample100')"> 100 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample500')"> 500 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample700')"> 700 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample1000')"> 1000 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample1500')"> 1500 </button>
+
+	</div>
+	<div class="container">
+		<h2> Trained on Only Jazz Pieces (different styles) </h2>
+		<p> # of training data: 90 </p>
+
+		<button onclick="PlaySound('jazz_sample0')"> 0 </button>
+		<button onclick="PlaySound('jazz_sample100')"> 100 </button>
+		<button onclick="PlaySound('jazz_sample500')"> 500 </button>
+		<button onclick="PlaySound('jazz_sample700')"> 700 </button>
+		<button onclick="PlaySound('jazz_sample1000')"> 1000 </button>
+		<button onclick="PlaySound('jazz_sample1500')"> 1500 </button>
+	</div>
+</div> -->
+
+<br><br><br><br><br>
+
+
+<div class="questionContainer">
+	<div class="question">
+
+		<h1> Sample 1 </h1>
+		<button onclick="PlaySound('jazz_sample2500')"> Click Me! </button>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNfZBFJyducChge7jX7pQlP02jdN1XxixndRg96GACXeJkVw/viewform?embedded=true" width="440" height="851" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+	<div class="question">
+		<h1> Sample 2 </h1>
+		<button onclick="PlaySound('mozart_2')"> Click Me! </button>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdO_dZ40aE6Tl0tSpUwPQeykMoN3Coe5NX5SYCVzTt3ZI76tQ/viewform?embedded=true" width="440" height="851" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+	<div class="question">
+		<h1> Sample 3 </h1>
+		<button onclick="PlaySound('mozart_sample7500')"> Click Me! </button>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekWc28OzxcGxBx_9lEXKKgmKdnxvfBWCGnwXaSoFrs9sr6-A/viewform?embedded=true" width="440" height="808" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+	<div class="question">
+		<h1> Sample 4 </h1>
+		<button onclick="PlaySound('mozart_sonatas_sample2500')"> Click Me! </button>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSexL9Nvc8htm5gavgVKtc4zMrYJN1TbE062igjN-fbE1Nucrw/viewform?embedded=true" width="440" height="808" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+	<div class="question">
+		<h1> Sample 5 </h1>
+		<button onclick="PlaySound('watson_jazz_2500')"> Click Me! </button>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebLUKykpfSsRm5iGKfLpqCjP5xOGfQ8ccjMHYarER4veb_Ag/viewform?embedded=true" width="440" height="808" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+	<div class="question">
+		<h1> Sample 6 </h1>
+		<button onclick="PlaySound('sonata_248')"> Click Me! </button>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemUmLi9VsbgZxgP0vjdBhpLzXVK5bxWiukDfEYEZ8KXUvo8A/viewform?embedded=true" width="440" height="808" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+	<div class="question">
+		<h1> Sample 7 </h1>
+		<button onclick="PlaySound('watson_sonata_2500')"> Click Me! </button>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwj4tzbZ7xLy4PmU2UI1kObkTQTZI9XZDdz6K-KwOCISG7Gg/viewform?embedded=true" width="440" height="808" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+	<div class="question">
+		<h1> Sample 8 </h1>
+		<button onclick="PlaySound('watson_sample7000')"> Click Me! </button>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegG6WdpA52SpPQ9NBbL1hLadAwmkq3A2Jf4GVhgXsV1TwZOA/viewform?embedded=true" width="440" height="808" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+<div class="commentContainer"> 
+
+
+
+<div class="comment">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdz_CtpWTB70N_i6DZoqMYBhVAUh_073dA-QfnUsN2g7gxZw/viewform?embedded=true" width="640" height="498" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
+<div class="gif">
+		<img src="https://docs.google.com/uc?export=download&id=1WeBmBcglTGrLC6L3iEMlTvHmyq4RsvEC" alt="gif"/>
+</div>
+</div>
+
+	<div class="footer">
+			<div id="name">Emily Thi Tran </div>
+	</div>
+</div>
+
+<div class="examples"> 
+	<div class="subtop">
+		<p> Here are examples of what each piano genres could sound like: </p>
+			<button onclick="PlaySound('jazz_11')"> Jazz </button>
+			<button onclick="PlaySound('mozart_17')"> Classical (Mozart) </button>
+			<button onclick="PlaySound('sonata_311')"> Sonata </button>
+
+	</div>
+
+</div>
+
+</body>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</html>
